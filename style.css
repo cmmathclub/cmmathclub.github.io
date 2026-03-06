@@ -232,13 +232,13 @@ input:active {
 .topbar .btn {
     position: absolute;
     left: 10px; 
+        top: 5px;
 }
 
 .logo {
     /* Kept your responsive sizing! */
     max-height: 10vw;
     max-width: 20vw;
-        top: 5px;
     /* Removed display: block and margin-left: 28% */
 }
 
