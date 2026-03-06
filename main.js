@@ -1,3 +1,4 @@
+//light and dark mode switch
 function applyTheme() {
     const localStorageTheme = localStorage.getItem("theme");
     const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
@@ -19,10 +20,12 @@ button.addEventListener("click", () => {
     button.innerText = newCta;
 });
 
+// go home
 function linkHome() {
     window.location.href = "https://notes-online.surge.sh/index.html"
 };
 
+// good transition thing for light/dark mode
 document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     body.classList.add("no-transition");
@@ -31,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 10);
 });
 
+
+// SEARCH BAR UTIL. CHANGE OUT THE LINK ON THE LINE WHERE IT SAYS const jsonUrl = "(here)" WITH A JSON THAT ACTUALLY WORKS
 
 document.addEventListener("DOMContentLoaded", () => {
 let link = []
