@@ -228,13 +228,14 @@ input:active {
     justify-content: center;  /* Centers things horizontally */
 }
 
-/* Pin the button to the left so it doesn't disrupt the centered logo */
 .topbar .btn {
     position: absolute;
     left: 10px; 
-        top: 5px;
+    
+    /* The Vertical Centering Magic for Absolute Elements */
+    top: 50%; 
+    transform: translateY(-50%);
 }
-
 .logo {
     /* Kept your responsive sizing! */
     max-height: 10vw;
