@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.ico">
+<html lang="EN">
+<script src="main.js" defer></script>
+    <h1>Search (Beta)</h1>
+        <a href="index.html" class="goback">&lt; Back to Home</a>
+    <p>Use the Search Bar below to find the notes you are looking for:</p>
+    <p id="current-json-link" style="font-size:x-small; opacity:50%;"></p>
+    <div class="search-wrapper">
+        <br>
+        <input type="search" id="search" data-search>
+    </div>
+    <br>
+    <div class="note-cards" data-note-cards-container>
+        <template data-notes-template>
+            <a href="#" class="card-link" target="_blank">
+                <div class="card">
+                    <div class="header" data-header></div>
+                    <div class="body" data-body></div>
+                </div>
+            </a>
+        </template>
+    </div>
+        <br><br>
+        <div class="watermark">
+            <p class="watermark">© Colegio Menor San Francisco de Quito, 2026. All rights reserved.</p>
+        </div>
