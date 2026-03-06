@@ -508,3 +508,9 @@ a.index:hover {
     text-align: center;
     max-width: 80vw;
 }
+
+.banner {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
