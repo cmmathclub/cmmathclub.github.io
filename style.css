@@ -211,22 +211,35 @@ input:active {
     width:200px;
 }
 
+
+/*gemini made this code lol*/
 .topbar {
-    display:block;
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:98.5%;
-    background-color:var(--navbar);
-    text-align:center;
-    padding:2px 10px;
-    float:left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Use 100% instead of 98.5% */
+    box-sizing: border-box; /* This stops padding from making the bar wider than the screen */
+    background-color: var(--navbar);
+    padding: 10px;
+    
+    /* The Flexbox Magic */
+    display: flex;
+    align-items: center;      /* Centers things vertically */
+    justify-content: center;  /* Centers things horizontally */
+}
+
+/* Pin the button to the left so it doesn't disrupt the centered logo */
+.topbar .btn {
+    position: absolute;
+    left: 10px; 
 }
 
 .logo {
-    display:block;
-    max-height:46px;
-    margin-left:42%;
+    /* Kept your responsive sizing! */
+    max-height: 10vw;
+    max-width: 20vw;
+    
+    /* Removed display: block and margin-left: 28% */
 }
 
 .btn {
